@@ -1,0 +1,346 @@
+# X
+ButtonStyle 3 13 26x29@1 34x21@1 50x35@1 70x21@1 79x29@1 63x48@0 79x65@1 70x75@0 50x61@0 34x75@0 26x65@0 44x48@1 26x29@0
+# small up triangle
+ButtonStyle 2 4 50x35@1 65x65@0 35x65@0 50x35@1
+# small down triangle
+ButtonStyle 4 4 50x65@1 35x35@1 65x35@1 50x65@0
+# small right triangle
+ButtonStyle 6 4 35x65@0 35x35@1 65x50@1 35x65@0
+# small left triangle
+ButtonStyle 8 4 65x35@1 65x65@0 35x50@0 65x35@1
+# big box
+#ButtonStyle 8 5 25x25@1 25x75@1 75x75@0 75x25@0 25x25@1
+
+
+# some other ButtonStyles:
+# large up triangle
+#ButtonStyle 2 4 50x25@1 75x75@0 25x75@0 50x25@1
+# large down triangle
+#ButtonStyle 4 4 50x75@1 25x25@1 75x25@1 50x75@0
+# big box
+#ButtonStyle 2 5 25x25@1 25x75@1 75x75@0 75x25@0 25x25@1
+# little box
+#ButtonStyle 8 5 40x40@1 60x40@1 60x60@0 40x60@0 40x40@1
+# tall box
+#ButtonStyle 6 5 40x25@1 60x25@1 60x75@0 40x75@0 40x25@1
+# dot
+#ButtonStyle 4 5 45x45@1 55x45@1 55x55@0 45x55@0 45x45@1
+# an up arrow:
+#ButtonStyle 2 8 40x80@1 40x50@1 20x50@1 50x20@1 80x50@0 60x50@0 60x80@0 40x80@0
+# an X
+#ButtonStyle 3 13 26x29@1 34x21@1 50x35@1 70x21@1 79x29@1 63x48@0 79x65@1 70x75@0 50x61@0 34x75@0 26x65@0 44x48@1 26x29@0
+
+EdgeResistance 10000 50
+WindowFont lucidasanstypewriter-12
+IconFont lucidasanstypewriter-8
+EdgeScroll 100 100
+XORvalue 444
+
+ModulePath /usr/lib/fvwm/2.6.5
+PixmapPath /usr/share/pixmap
+IconPath /usr/share/icons
+
+HilightColor yellow3 #354035
+DeskTopSize 3x3
+MenuStyle yellow3 #354035 #354035 lucidasanstypewriter-12 fvwm
+ClickTime 250
+ColormapFocus FollowsMouse
+OpaqueMoveSize 100
+
+Style "*"		BorderWidth 1, HandleWidth 2
+Style "*"		Icon unknown1.xpm, Color grey/black
+#Style "*"		ActivePlacement, SmartPlacement
+Style "*"		RandomPlacement, SmartPlacement
+Style "*"		MWMFunctions,MWMDecor,MWMBorder,MWMButtons
+Style "*"		HintOverride
+#Style "*"		DecorateTransient,IconBox 0 -10 -280 -1
+fStyle "*"		IconBox 200 0 200 70
+#Style "*"		NoIcon
+Style "Fvwm*"		NoTitle, NoHandles, Sticky, WindowListSkip,
+Style "Fvwm*"		BorderWidth 0,CirculateSkipIcon
+Style "Fvwm Pager"	StaysOnTop, NoHandles, BorderWidth 1
+#Style "FvwmBanner"	StaysOnTop
+Style "FvwmButtons"	NoTitle, NoHandles, Sticky, WindowListSkip
+Style "FvwmButtons"	BorderWidth 0, CirculateSkip, StaysOnTop
+Style "FvwmButtons"	Icon toolbox.xpm, ClickToFocus
+Style "*lock"		NoTitle, NoHandles, Sticky, WindowListSkip
+#Style "*lock"		RandomPlacement
+
+#Key Left	A	M	Scroll -100 0
+#Key Right	A	M	Scroll +100 +0
+#Key Up		A	M	Scroll +0   -100
+#Key Down	A	M	Scroll +0   +100
+#Key Left	A	C	CursorMove -10 +0
+#Key Right	A	C	CursorMove +10 +0
+#Key Up		A	C	CursorMove +0  -10
+#Key Down	A	C	CursorMove +0  +10
+Key Left	A	SM	Scroll -100 +0
+Key Right	A	SM	Scroll +100 +0
+Key Up		A	SM	Scroll +0   -100
+Key Down	A	SM	Scroll +0   +100
+#Key Left	A	C	CursorMove -10 +0
+#Key Right	A	C	CursorMove +10 +0
+#Key Up		A	C	CursorMove +0  -10
+#Key Down	A	C	CursorMove +0  +10
+#Key Left	A	SC	CursorMove -1 +0
+#Key Right	A	SC	CursorMove +1 +0
+#Key Up		A	SC	CursorMove +0 -1
+#Key Down	A	SC	CursorMove +0 +1
+#Key KP_F1	A	M	Popup "Utilities"
+#Key KP_F2	A	M	Popup "Window-Ops"
+#Key KP_F3	A	M	Module FvwmWinList 
+#Key KP_F4	A	M	Iconify
+#Key F5		A	M	Move	    100p 100p
+#Key F6		A	M	Resize	 10 10
+#Key F7		A	M	Next [*] focus
+#Key F8		A	M	Prev [*] focus
+#Key F10		A	A	Next [CurrentDesk xterm]Focus
+#Key F11	A	A	Prev [CurrentDesk rxvt]Focus
+#Key F15		FTIWS	A	Raise
+# EZK KEYBOARD ACCELERATORS
+#ey F1		A	A	Popup "Utilities"
+#Key F2		A	A	Popup "Window-Ops"
+#Key F3		A	A	Module FvwmWinList
+#Key F4		A	A	Iconify
+#Key F4		AT	N	GotoPage 1 1
+#Key F5		AT	N	GotoPage 0 2
+#Key F6		AT	N	GotoPage 1 2
+#Key F5		A	A	Move
+#Key F6		A	A	Resize
+#Key F7		AT	N	CirculateUp
+#Key F8		AT	N	CirculateDown
+#Key F9		AT	N	Warp EMAIL exmh
+#Key F9		AT	N	Warp EMAIL
+#Key F9		A	A	Next [CurrentDesk EMAIL*] Focus
+#Key F9		A	A	Next [CurrentDesk EMAIL*] Iconify-and-Focus
+#ey F9		AT	A	RaiseLower
+#Key F10		AT	N	Iconify
+#Key F11		AT	N	Lower
+#Key F12		AT	N	Raise
+Key F12		AT	N	Raise
+#Key Help	AT	N	Lower
+# EZK RESIZING OF WINDOWS BY 10% ON EACH SIDE (shift and arrow key)
+# does this work now?
+#Key Left	A	S	Resize -10  +0
+#Key Right	A	S	Resize +10  +0
+#Key Up		A	S	Resize	+0 -10
+#Key Down	A	S	Resize	+0 +10
+
+Mouse 1	R	A	Menu Utilities Nop
+Mouse 2	R	A	Menu Window-Ops Nop
+Mouse 3	R	A	WindowList
+Mouse 0	1	A	Menu Window-Ops2 Close
+Mouse 0	3	A	Delete
+Mouse 0	2	A	Maximize-Func
+Mouse 0	4	A	Iconify
+Mouse 0	6	A	Change-Width-Func
+Mouse 0	8	A	Resize 44 50
+Mouse 1	FS	A	Resize-or-Raise
+Mouse 1	T	A	Move-or-Raise
+Mouse 1	I	A	Move-or-Iconify
+Mouse 2	I	A	Iconify
+Mouse 2	FST	A	Menu Window-Ops2 Nop
+Mouse 3	TI	M	RaiseLower
+Mouse 3	W	M	RaiseLower
+Mouse 3	W	M	RaiseLower
+
+########################Initialization Functions ############################
+AddToFunc InitFunction		"I"	Module	FvwmPager 0 0
+AddToFunc RestartFunction	"I"	Module	FvwmPager 0 0
+
+########################Menus ########################################
+AddToMenu Utilities	"utils"	Title	
++			"gterm"	Exec gnome-terminal &
++			"emacs"	Exec emacs &
++			"chrome"	Exec google-chrome &
++			"firefox"	Exec firefox &
+#+			"opera"	Exec opera &
++			"evince"	Exec evince &
+#+			"xlock"	Exec  xlock -mode blank -remote &
++			""		Nop
++			"exit?"		Popup	Quit-Verify
+AddToMenu Window-Ops	"Window Ops"	Title		
++			"Move"		Move-or-Raise2
++			"Resize"	Resize-or-Raise2
++			"Raise"		Raise
++			"Lower"		Lower 
++			"(De)Iconify"	Iconify
++			"(Un)Stick"	Stick		
++			"(Un)Maximize"	maximize_func
++			""		Nop  
++			"Delete"	Delete	 
++			"Close"		Close	 
++			"Destroy"	Destroy
++			""		Nop		
++			"Refresh Screen" Refresh		
+AddToMenu Window-Ops2	"Move"		Move-or-Raise
++			"Resize"	Resize-or-Raise
++			"Raise"		Raise		
++			"Lower"		Lower		
++			"Iconify"	Iconify		
++			"(Un)Stick"	Stick		
++			""		Nop		
++			"Delete"	Delete	
++			"Close"		Close		
++			"Destroy"	Destroy		
++			""		Nop		
++			"ScrollBar"	Module FvwmScroll 2 2	
++			"Print"		PrintFunction
+
+AddToMenu Module-Popup	"Modules"	Title	
++			"AutoRaise"	Module	FvwmAuto 500
++			"Button-Bar"	Module	FvwmButtons
++			"Clean-Up"	Module	FvwmClean
++			"Identify"	Module	FvwmIdent
++			"SaveDesk 1"	Module	FvwmSave
++			"SaveDesk 2"	Module	FvwmSaveDesk
++			"Debug"		Module	FvwmDebug
++			"Pager"		Module	FvwmPager 0 0
++			"WinList"	Module	FvwmWinList
++			"Background"	Module	FvwmBacker
++			"IconBox"	Module	FvwmIconBox
++			"Banner"	Module	FvwmBanner
++			"Talk"		Module	FvwmTalk
++			"Prompt"	Module	FvwmPrompt "hello" raise
+
+AddToMenu Quit-Verify
++			"quit"	Quit	
++			"restart"	Restart fvwm
+
+########################Functions ########################################
+
+AddToFunc MailFunction	   "I" Next [$0] Iconify -1
++			   "I" Next [$0] focus
++			   "I" None [$0] Exec $0 $1
+
+AddToFunc Move-or-Raise		"I" Raise
++				"M" Move
++				"D" Lower
+
+AddToFunc Move-or-Raise2	"M" Raise
++				"M" Move
++				"D" Lower
+
+AddToFunc Maximize-Func		"M" Maximize	 0 100
++				"C" Maximize	 0 100
++				"D" Maximize	 100 100
+
+AddToFunc Move-or-Iconify	"I" Raise
++				"M" Move
++				"D" Iconify
+
+AddToFunc Resize-or-Raise	"I" Raise
++				"M" Resize
++				"D" Lower
+
+AddToFunc Resize-or-Raise2	"M" Raise
++				"M" Resize
++				"D" Lower
+
+AddToFunc PrintFunction		"I" Raise
++				"I" Exec xdpr -id $w
+
+# EZK Functions
+# This function saves any desktop to a host-specific cache file
+AddToFunc memorize_desktop	"I" Module FvwmSave
++				"I" Exec save_new_xinitrc
+
+AddToFunc Iconify-and-Focus	"I" Iconify -1
++				"I" Focus
+
+# change the width of a window
+AddToFunc Change-Width-Func	"M" Maximize	 100 0
++				"C" Maximize	 70 0
++				"D" Maximize	 100 100
+
+
+################## FvwmButtons button-bar ################################
+# Colors
+*FvwmButtonsFore yellow3
+*FvwmButtonsBack #354035
+#*FvwmButtonsBack grey
+
+# Font
+*FvwmButtonsFont lucidasanstypewrite-12
+# Geometry - really likes to pick its own size, but giving a position is OK
+*FvwmButtonsGeometry 90x90+0+0
+
+# Layout: specify rows or columns, not both
+*FvwmButtonsRows 2
+
+########################## Window-Identifier ###############################
+# Just choose colors and a fonts
+*FvwmIdentBack #354035
+*FvwmIdentFore yellow3
+*FvwmIdentFont lucidasanstypewrite-12
+
+########################### Pager #########################################
+#*FvwmPagerBack #908090
+#*FvwmPagerFore #484048
+*FvwmPagerBack black
+*FvwmPagerFore grey
+*FvwmPagerHilight slategrey
+*FvwmPagerFont lucidasanstypewrite-12
+*FvwmPagerGeometry 65x50+0+0
+*FvwmPagerSmallFont lucidasanstypewrite-12
+
+##########################FvwmWinList##################################
+*FvwmWinListBack seagreen
+*FvwmWinListFore yellow3
+*FvwmWinListFont lucidasanstypewrite-12
+*FvwmWinListAction Click1 Iconify -1,Focus
+*FvwmWinListAction Click2 Iconify
+*FvwmWinListAction Click3 Module "FvwmIdent" FvwmIdent
+*FvwmWinListUseSkipList
+*FvwmWinListGeometry -0-0
+
+*FvwmBackerDesk 0 -solid black
+#*FvwmBackerDesk 1 -solid black
+
+*FvwmScrollBack grey
+*FvwmScrollFore green
+	
+############################################################
+############################################################
+# Note that icons are shown in the module
+#    only if NoIcon commnand is applied.
+#Style	   "*"	NoIcon
+
+############################################################
+#*FvwmIconBoxIconBack	 #cfcfcf
+*FvwmIconBoxIconFore	white
+*FvwmIconBoxIconBack	black
+*FvwmIconBoxIconHiFore	green
+*FvwmIconBoxIconHiBack	red
+*FvwmIconBoxBack	black
+#*FvwmIconBoxFore	blue
+#*FvwmIconBoxGeometry	 5x1+0+0
+*FvwmIconBoxGeometry	1x8-0+0
+#*FvwmIconBoxMaxIconSize 64x38
+*FvwmIconBoxMaxIconSize 48x40
+*FvwmIconBoxFont	lucidasanstypewrite-8
+*FvwmIconBoxSortIcons
+*FvwmIconBoxPadding	1
+#*FvwmIconBoxLines	 10
+*FvwmIconBoxLines	1
+#*FvwmIconBoxSBWidth	 11
+*FvwmIconBoxSBWidth	8
+*FvwmIconBoxPlacement	Left Top
+#*FvwmIconBoxPixmap	 fvwm.xpm
+#*FvwmIconBoxHideSC Horizontal
+*FvwmIconBoxHideSC  Horizontal
+*FvwmIconBoxSetWMIconSize
+*FvwmIconBoxHilightFocusWin
+*FvwmIconBoxMouse	1	Click		RaiseLower
+*FvwmIconBoxMouse	1	DoubleClick	Iconify
+*FvwmIconBoxMouse	2	Click		Iconify -1, Focus
+*FvwmIconBoxMouse	3	Click		Module "FvwmIdent" Fvw
+*FvwmIconBoxKey		r	RaiseLower
+*FvwmIconBoxKey		space	Iconify
+*FvwmIconBoxKey		d	Close
+*FvwmIconBoxKey		n	Next
+*FvwmIconBoxKey		p	Prev
+*FvwmIconBoxKey		h	Left
+*FvwmIconBoxKey		j	Down
+*FvwmIconBoxKey		k	Up
+*FvwmIconBoxKey		l	Right
