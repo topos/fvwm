@@ -74,10 +74,10 @@ Style "*lock"		NoTitle, NoHandles, Sticky, WindowListSkip
 #Key Right	A	C	CursorMove +10 +0
 #Key Up		A	C	CursorMove +0  -10
 #Key Down	A	C	CursorMove +0  +10
-Key Left	A	SM	Scroll -100 +0
-Key Right	A	SM	Scroll +100 +0
-Key Up		A	SM	Scroll +0   -100
-Key Down	A	SM	Scroll +0   +100
+Key Left	A	M	Scroll -100 +0
+Key Right	A	M	Scroll +100 +0
+Key Up		A	M	Scroll +0   -100
+Key Down	A	M	Scroll +0   +100
 #Key Left	A	C	CursorMove -10 +0
 #Key Right	A	C	CursorMove +10 +0
 #Key Up		A	C	CursorMove +0  -10
