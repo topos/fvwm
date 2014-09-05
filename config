@@ -31,7 +31,7 @@ ButtonStyle 8 4 65x35@1 65x65@0 35x50@0 65x35@1
 #ButtonStyle 3 13 26x29@1 34x21@1 50x35@1 70x21@1 79x29@1 63x48@0 79x65@1 70x75@0 50x61@0 34x75@0 26x65@0 44x48@1 26x29@0
 
 EdgeResistance 10000 50
-WindowFont lucidasanstypewriter-12
+WindowFont lucidasanstypewriter-14
 IconFont lucidasanstypewriter-8
 EdgeScroll 100 100
 XORvalue 444
@@ -76,8 +76,8 @@ Style "*lock"		NoTitle, NoHandles, Sticky, WindowListSkip
 #Key Down	A	C	CursorMove +0  +10
 Key Left	A	M	Scroll -100 +0
 Key Right	A	M	Scroll +100 +0
-Key Up		A	M	Scroll +0 -100
-Key Down	A	M	Scroll +0 +100
+Key Up		A	M	Scroll +0   -100
+Key Down	A	M	Scroll +0   +100
 #Key Left	A	C	CursorMove -10 +0
 #Key Right	A	C	CursorMove +10 +0
 #Key Up		A	C	CursorMove +0  -10
